@@ -15,7 +15,7 @@ function typeturaInit(global, el) {
   var stylesheet = document.createElement('style');
   // Typetura's custom properties
   stylesheet.innerHTML =
-    'body{--tt-ease:linear;--tt-max:1600;--tt-bind:var(--tt-width);}*{--tt-key:none;animation:var(--tt-key) 1s var(--tt-ease) 1 calc(-1s*var(--tt-bind)/var(--tt-max)) paused}';
+    'body{--tt-ease:linear;--tt-max:1600;--tt-bind:var(--tt-width);}h1,h2,h3,h4,h5,h6{--tt-key:none;animation:var(--tt-key) 1s var(--tt-ease) 1 calc(-1s*var(--tt-bind)/var(--tt-max)) paused}';
   // Write typetura proprties to the top of the document head to avoid cascade conflicts
   document.head.insertBefore(stylesheet, document.head.firstChild);
 }
